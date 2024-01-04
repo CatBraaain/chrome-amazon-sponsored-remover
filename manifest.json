@@ -1,0 +1,20 @@
+{
+    "name": "Amazon Sponsored Products Remover",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "include_globs": [
+                "https://www.amazon.*/s?k=*"
+            ],
+            "run_at": "document_start",
+            "css": [
+                "amazon-sponsored-remover.css"
+            ]
+        }
+    ],
+    "homepage_url": "https://github.com/CatBraaain/chrome-amazon-sponsored-products-remover"
+}
